@@ -1,0 +1,859 @@
+{
+ "dashboard": {
+  "total_users": 4,
+  "total_farmers": 1,
+  "total_buyers": 2,
+  "total_active_users": 4,
+  "total_pending_users": 0,
+  "total_pending_approvals": 0,
+  "total_verified_farmers": 1,
+  "total_approved_buyers": 2,
+  "total_suspended_accounts": 0,
+  "total_rejected_accounts": 0,
+  "total_identity_verified": 2,
+  "pending_verification_reviews": 0,
+  "recent_registrations": [
+   {
+    "id": "d51788f3-81c2-4386-be1c-7d4fb4555e8a",
+    "full_name": "Buyer2",
+    "email": "buyer2@example.com",
+    "phone_number": "+923010000004",
+    "role": "BUYER",
+    "email_verified": true,
+    "identity_verified": false,
+    "account_status": "ACTIVE"
+   },
+   {
+    "id": "d9287552-064e-47cf-8b47-8b379028a599",
+    "full_name": "Buyer1",
+    "email": "buyer1@example.com",
+    "phone_number": "+923010000003",
+    "role": "BUYER",
+    "email_verified": true,
+    "identity_verified": true,
+    "account_status": "ACTIVE"
+   },
+   {
+    "id": "d95e7eea-aca1-4021-8332-3c4b3f16d879",
+    "full_name": "Farmer",
+    "email": "farmer@example.com",
+    "phone_number": "+923010000002",
+    "role": "FARMER",
+    "email_verified": true,
+    "identity_verified": true,
+    "account_status": "ACTIVE"
+   },
+   {
+    "id": "655072b6-894c-44c3-ae58-2be3fe040caa",
+    "full_name": "Admin",
+    "email": "admin@example.com",
+    "phone_number": "+923010000001",
+    "role": "ADMIN",
+    "email_verified": true,
+    "identity_verified": false,
+    "account_status": "ACTIVE"
+   }
+  ]
+ },
+ "market": {
+  "listings": {
+   "DRAFT": 0,
+   "OPEN": 0,
+   "CLOSED": 0,
+   "SOLD": 0,
+   "CANCELLED": 1
+  },
+  "bids": {
+   "ACTIVE": 0,
+   "ACCEPTED": 0,
+   "REJECTED": 1,
+   "WITHDRAWN": 0,
+   "EXPIRED": 0
+  },
+  "accepted_quantity_kg": 0,
+  "official_prices": 2,
+  "latest_price_date": "2026-11-25"
+ },
+ "users": {
+  "items": [
+   {
+    "id": "d51788f3-81c2-4386-be1c-7d4fb4555e8a",
+    "full_name": "Buyer2",
+    "email": "buyer2@example.com",
+    "phone_number": "+923010000004",
+    "role": "BUYER",
+    "email_verified": true,
+    "identity_verified": false,
+    "account_status": "ACTIVE",
+    "created_at": "2026-11-25T18:28:40.252788",
+    "last_login_at": null,
+    "buyer_profile": {
+     "district": "Faisalabad",
+     "business_name": "buyer2 Mills",
+     "buyer_type": "MILL_OWNER",
+     "business_address": null,
+     "ntn_number": null,
+     "purchase_capacity_tons": null,
+     "interested_grains": []
+    }
+   },
+   {
+    "id": "d9287552-064e-47cf-8b47-8b379028a599",
+    "full_name": "Buyer1",
+    "email": "buyer1@example.com",
+    "phone_number": "+923010000003",
+    "role": "BUYER",
+    "email_verified": true,
+    "identity_verified": true,
+    "account_status": "ACTIVE",
+    "created_at": "2026-11-25T18:28:40.242329",
+    "last_login_at": null,
+    "buyer_profile": {
+     "district": "Faisalabad",
+     "business_name": "buyer1 Mills",
+     "buyer_type": "MILL_OWNER",
+     "business_address": null,
+     "ntn_number": null,
+     "purchase_capacity_tons": null,
+     "interested_grains": []
+    }
+   },
+   {
+    "id": "d95e7eea-aca1-4021-8332-3c4b3f16d879",
+    "full_name": "Farmer",
+    "email": "farmer@example.com",
+    "phone_number": "+923010000002",
+    "role": "FARMER",
+    "email_verified": true,
+    "identity_verified": true,
+    "account_status": "ACTIVE",
+    "created_at": "2026-11-25T18:28:40.231140",
+    "last_login_at": null,
+    "farmer_profile": {
+     "district": "Okara",
+     "village_tehsil": "Raiwind",
+     "land_size_acres": 12.5,
+     "address": null,
+     "main_crops": [
+      "WHEAT",
+      "MAIZE"
+     ]
+    }
+   },
+   {
+    "id": "655072b6-894c-44c3-ae58-2be3fe040caa",
+    "full_name": "Admin",
+    "email": "admin@example.com",
+    "phone_number": "+923010000001",
+    "role": "ADMIN",
+    "email_verified": true,
+    "identity_verified": false,
+    "account_status": "ACTIVE",
+    "created_at": "2026-11-25T18:28:40.211623",
+    "last_login_at": "2026-11-25T18:28:56.018228"
+   }
+  ],
+  "page": 1,
+  "page_size": 25,
+  "total": 4
+ },
+ "user_buyer": {
+  "id": "d9287552-064e-47cf-8b47-8b379028a599",
+  "full_name": "Buyer1",
+  "email": "buyer1@example.com",
+  "phone_number": "+923010000003",
+  "role": "BUYER",
+  "email_verified": true,
+  "identity_verified": true,
+  "account_status": "ACTIVE",
+  "created_at": "2026-11-25T18:28:40.242329",
+  "last_login_at": null,
+  "buyer_profile": {
+   "district": "Faisalabad",
+   "business_name": "buyer1 Mills",
+   "buyer_type": "MILL_OWNER",
+   "business_address": null,
+   "ntn_number": null,
+   "purchase_capacity_tons": null,
+   "interested_grains": []
+  },
+  "has_photo": false,
+  "completion": {
+   "percent": 67,
+   "missing": [
+    "profile_photo",
+    "business_address",
+    "interested_grains"
+   ]
+  },
+  "verification": {
+   "status": "VERIFIED",
+   "identity_verified": true,
+   "submitted_at": "2026-11-25T18:28:56.218645",
+   "reviewed_at": "2026-11-25T18:28:56.490687",
+   "rejection_reason": null,
+   "requirements": [
+    {
+     "key": "CNIC_FRONT",
+     "label": "CNIC front side",
+     "accepted_types": [
+      "CNIC_FRONT"
+     ],
+     "satisfied": true
+    },
+    {
+     "key": "CNIC_BACK",
+     "label": "CNIC back side",
+     "accepted_types": [
+      "CNIC_BACK"
+     ],
+     "satisfied": true
+    },
+    {
+     "key": "BUSINESS_PROOF",
+     "label": "Business registration, NTN certificate or trade license",
+     "accepted_types": [
+      "BUSINESS_REGISTRATION",
+      "NTN_CERTIFICATE",
+      "TRADE_LICENSE"
+     ],
+     "satisfied": true
+    }
+   ],
+   "can_submit": false,
+   "documents": [
+    {
+     "id": "57164b60-7b5e-4b89-8827-a7125b3b1810",
+     "document_type": "CNIC_FRONT",
+     "status": "APPROVED",
+     "review_reason": null,
+     "file_name": "CNIC_FRONT.png",
+     "content_type": "image/png",
+     "size_bytes": 208,
+     "uploaded_at": "2026-11-25T18:28:56.146789",
+     "reviewed_at": "2026-11-25T18:28:56.490687"
+    },
+    {
+     "id": "f98437ee-e9b9-49b8-b5c8-a910f94ca419",
+     "document_type": "CNIC_BACK",
+     "status": "APPROVED",
+     "review_reason": null,
+     "file_name": "CNIC_BACK.png",
+     "content_type": "image/png",
+     "size_bytes": 208,
+     "uploaded_at": "2026-11-25T18:28:56.164217",
+     "reviewed_at": "2026-11-25T18:28:56.490687"
+    },
+    {
+     "id": "80dc23e1-4bc1-4a2d-b0ab-87d97325a50e",
+     "document_type": "NTN_CERTIFICATE",
+     "status": "APPROVED",
+     "review_reason": null,
+     "file_name": "NTN_CERTIFICATE.pdf",
+     "content_type": "application/pdf",
+     "size_bytes": 209,
+     "uploaded_at": "2026-11-25T18:28:56.194624",
+     "reviewed_at": "2026-11-25T18:28:56.431692"
+    }
+   ]
+  }
+ },
+ "user_farmer": {
+  "id": "d95e7eea-aca1-4021-8332-3c4b3f16d879",
+  "full_name": "Farmer",
+  "email": "farmer@example.com",
+  "phone_number": "+923010000002",
+  "role": "FARMER",
+  "email_verified": true,
+  "identity_verified": true,
+  "account_status": "ACTIVE",
+  "created_at": "2026-11-25T18:28:40.231140",
+  "last_login_at": null,
+  "farmer_profile": {
+   "district": "Okara",
+   "village_tehsil": "Raiwind",
+   "land_size_acres": 12.5,
+   "address": null,
+   "main_crops": [
+    "WHEAT",
+    "MAIZE"
+   ]
+  },
+  "has_photo": false,
+  "completion": {
+   "percent": 78,
+   "missing": [
+    "profile_photo",
+    "address"
+   ]
+  },
+  "verification": {
+   "status": "VERIFIED",
+   "identity_verified": true,
+   "submitted_at": "2026-11-25T18:28:56.120126",
+   "reviewed_at": "2026-11-25T18:28:56.509904",
+   "rejection_reason": null,
+   "requirements": [
+    {
+     "key": "CNIC_FRONT",
+     "label": "CNIC front side",
+     "accepted_types": [
+      "CNIC_FRONT"
+     ],
+     "satisfied": true
+    },
+    {
+     "key": "CNIC_BACK",
+     "label": "CNIC back side",
+     "accepted_types": [
+      "CNIC_BACK"
+     ],
+     "satisfied": true
+    }
+   ],
+   "can_submit": false,
+   "documents": [
+    {
+     "id": "6d727784-e324-403d-8900-249ca8d40d83",
+     "document_type": "CNIC_FRONT",
+     "status": "APPROVED",
+     "review_reason": null,
+     "file_name": "CNIC_FRONT.png",
+     "content_type": "image/png",
+     "size_bytes": 208,
+     "uploaded_at": "2026-11-25T18:28:56.071055",
+     "reviewed_at": "2026-11-25T18:28:56.509904"
+    },
+    {
+     "id": "8211a804-8efa-4b5f-9200-83b202e69573",
+     "document_type": "CNIC_BACK",
+     "status": "APPROVED",
+     "review_reason": null,
+     "file_name": "CNIC_BACK.png",
+     "content_type": "image/png",
+     "size_bytes": 208,
+     "uploaded_at": "2026-11-25T18:28:56.091287",
+     "reviewed_at": "2026-11-25T18:28:56.509904"
+    }
+   ]
+  }
+ },
+ "documents": [
+  {
+   "id": "80dc23e1-4bc1-4a2d-b0ab-87d97325a50e",
+   "document_type": "NTN_CERTIFICATE",
+   "status": "APPROVED",
+   "review_reason": null,
+   "file_name": "NTN_CERTIFICATE.pdf",
+   "content_type": "application/pdf",
+   "size_bytes": 209,
+   "uploaded_at": "2026-11-25T18:28:56.194624",
+   "reviewed_at": "2026-11-25T18:28:56.431692",
+   "verification_id": "58995eb8-d6d5-4064-b03f-46acf4594cb2"
+  },
+  {
+   "id": "f98437ee-e9b9-49b8-b5c8-a910f94ca419",
+   "document_type": "CNIC_BACK",
+   "status": "APPROVED",
+   "review_reason": null,
+   "file_name": "CNIC_BACK.png",
+   "content_type": "image/png",
+   "size_bytes": 208,
+   "uploaded_at": "2026-11-25T18:28:56.164217",
+   "reviewed_at": "2026-11-25T18:28:56.490687",
+   "verification_id": "58995eb8-d6d5-4064-b03f-46acf4594cb2"
+  },
+  {
+   "id": "57164b60-7b5e-4b89-8827-a7125b3b1810",
+   "document_type": "CNIC_FRONT",
+   "status": "APPROVED",
+   "review_reason": null,
+   "file_name": "CNIC_FRONT.png",
+   "content_type": "image/png",
+   "size_bytes": 208,
+   "uploaded_at": "2026-11-25T18:28:56.146789",
+   "reviewed_at": "2026-11-25T18:28:56.490687",
+   "verification_id": "58995eb8-d6d5-4064-b03f-46acf4594cb2"
+  }
+ ],
+ "verifications": [
+  {
+   "id": "81eb8040-34d3-4555-94e6-f2509d3a0089",
+   "user_id": "d51788f3-81c2-4386-be1c-7d4fb4555e8a",
+   "user_name": "Buyer2",
+   "user_role": "BUYER",
+   "verification_type": "IDENTITY",
+   "status": "PENDING",
+   "submitted": false,
+   "submitted_at": null,
+   "document_reference": null,
+   "document_count": 0,
+   "review_reason": null,
+   "reviewed_at": null,
+   "created_at": "2026-11-25T18:28:40.254247"
+  },
+  {
+   "id": "58995eb8-d6d5-4064-b03f-46acf4594cb2",
+   "user_id": "d9287552-064e-47cf-8b47-8b379028a599",
+   "user_name": "Buyer1",
+   "user_role": "BUYER",
+   "verification_type": "IDENTITY",
+   "status": "APPROVED",
+   "submitted": true,
+   "submitted_at": "2026-11-25T18:28:56.218645",
+   "document_reference": "57164b60-7b5e-4b89-8827-a7125b3b1810,f98437ee-e9b9-49b8-b5c8-a910f94ca419,80dc23e1-4bc1-4a2d-b0ab-87d97325a50e",
+   "document_count": 3,
+   "review_reason": "Documents match CNIC",
+   "reviewed_at": "2026-11-25T18:28:56.490687",
+   "created_at": "2026-11-25T18:28:40.246070"
+  },
+  {
+   "id": "e91002bd-0c98-4025-a606-40f1d6017a3c",
+   "user_id": "d95e7eea-aca1-4021-8332-3c4b3f16d879",
+   "user_name": "Farmer",
+   "user_role": "FARMER",
+   "verification_type": "IDENTITY",
+   "status": "APPROVED",
+   "submitted": true,
+   "submitted_at": "2026-11-25T18:28:56.120126",
+   "document_reference": "6d727784-e324-403d-8900-249ca8d40d83,8211a804-8efa-4b5f-9200-83b202e69573",
+   "document_count": 2,
+   "review_reason": "Documents match CNIC",
+   "reviewed_at": "2026-11-25T18:28:56.509904",
+   "created_at": "2026-11-25T18:28:40.235275"
+  }
+ ],
+ "listings": {
+  "items": [
+   {
+    "id": "3cde247c-bb09-4b96-9076-3449815745f2",
+    "status": "CANCELLED",
+    "bidding_open": false,
+    "grain": "WHEAT",
+    "variety": null,
+    "quality_grade": null,
+    "moisture_percent": null,
+    "description": null,
+    "quantity": 100.0,
+    "quantity_unit": "MAUND",
+    "quantity_kg": 4000.0,
+    "remaining_kg": 4000.0,
+    "remaining_quantity": 100.0,
+    "min_order_kg": null,
+    "expected_price": 4000.0,
+    "price_unit": "MAUND",
+    "expected_price_per_maund": 4000.0,
+    "district": "Okara",
+    "city": "Okara",
+    "location_details": null,
+    "delivery_option": "NEGOTIABLE",
+    "available_from": null,
+    "bidding_opens_at": "2026-11-25T18:28:56.727319+00:00",
+    "bidding_closes_at": "2026-11-27T18:28:56.718981+00:00",
+    "cancel_reason": "Removed by AgroBid: Duplicate listing",
+    "created_at": "2026-11-25T18:28:56.729364+00:00",
+    "updated_at": "2026-11-25T18:28:56.894115+00:00",
+    "farmer": {
+     "id": "d95e7eea-aca1-4021-8332-3c4b3f16d879",
+     "full_name": "Farmer",
+     "identity_verified": true
+    },
+    "bid_stats": {
+     "active_bids": 0,
+     "accepted_bids": 0,
+     "highest_bid_per_maund": null
+    }
+   }
+  ],
+  "page": 1,
+  "page_size": 25,
+  "total": 1
+ },
+ "listing": {
+  "listing": {
+   "id": "3cde247c-bb09-4b96-9076-3449815745f2",
+   "status": "CANCELLED",
+   "bidding_open": false,
+   "grain": "WHEAT",
+   "variety": null,
+   "quality_grade": null,
+   "moisture_percent": null,
+   "description": null,
+   "quantity": 100.0,
+   "quantity_unit": "MAUND",
+   "quantity_kg": 4000.0,
+   "remaining_kg": 4000.0,
+   "remaining_quantity": 100.0,
+   "min_order_kg": null,
+   "expected_price": 4000.0,
+   "price_unit": "MAUND",
+   "expected_price_per_maund": 4000.0,
+   "district": "Okara",
+   "city": "Okara",
+   "location_details": null,
+   "delivery_option": "NEGOTIABLE",
+   "available_from": null,
+   "bidding_opens_at": "2026-11-25T18:28:56.727319+00:00",
+   "bidding_closes_at": "2026-11-27T18:28:56.718981+00:00",
+   "cancel_reason": "Removed by AgroBid: Duplicate listing",
+   "created_at": "2026-11-25T18:28:56.729364+00:00",
+   "updated_at": "2026-11-25T18:28:56.894115+00:00",
+   "farmer": {
+    "id": "d95e7eea-aca1-4021-8332-3c4b3f16d879",
+    "full_name": "Farmer",
+    "identity_verified": true
+   },
+   "bid_stats": {
+    "active_bids": 0,
+    "accepted_bids": 0,
+    "highest_bid_per_maund": null
+   },
+   "benchmark": {
+    "id": "ffc0c2a4-d064-4951-aeaf-486c91ddf753",
+    "grain": "WHEAT",
+    "market": "Okara",
+    "province": "Punjab",
+    "min_price": null,
+    "max_price": null,
+    "avg_price": 10100.0,
+    "unit": "QUINTAL",
+    "price_per_maund": 4040.0,
+    "price_date": "2026-11-25",
+    "age_days": 0,
+    "source": "AMIS_PUNJAB",
+    "source_url": null
+   },
+   "expected_vs_benchmark": {
+    "reference_per_maund": 4040.0,
+    "diff_per_maund": -40.0,
+    "diff_percent": -0.99,
+    "position": "BELOW"
+   }
+  },
+  "bids": [
+   {
+    "id": "def6a2fb-1917-4d47-bb8f-51fb271c11db",
+    "listing_id": "3cde247c-bb09-4b96-9076-3449815745f2",
+    "status": "REJECTED",
+    "revision": 1,
+    "price": 4100.0,
+    "price_unit": "MAUND",
+    "price_per_maund": 4100.0,
+    "quantity": 50.0,
+    "quantity_unit": "MAUND",
+    "quantity_kg": 2000.0,
+    "total_value": 205000.0,
+    "delivery_option": "NEGOTIABLE",
+    "delivery_notes": null,
+    "payment_terms": null,
+    "valid_until": "2026-11-30T18:28:56.718981+00:00",
+    "decision_reason": "Listing was removed by AgroBid",
+    "decided_at": "2026-11-25T18:28:56.896364+00:00",
+    "created_at": "2026-11-25T18:28:56.763690+00:00",
+    "updated_at": "2026-11-25T18:28:56.898040+00:00",
+    "buyer": {
+     "id": "d9287552-064e-47cf-8b47-8b379028a599",
+     "full_name": "Buyer1",
+     "identity_verified": true,
+     "business_name": "buyer1 Mills",
+     "buyer_type": "MILL_OWNER",
+     "district": "Faisalabad"
+    }
+   }
+  ],
+  "history": [
+   {
+    "id": "ca4bcecc-30c8-4dc2-b1e5-249419131845",
+    "listing_id": "3cde247c-bb09-4b96-9076-3449815745f2",
+    "bid_id": null,
+    "actor_id": "d95e7eea-aca1-4021-8332-3c4b3f16d879",
+    "action": "LISTING_CREATED",
+    "data": {
+     "status": "OPEN",
+     "quantity_kg": "4000.000"
+    },
+    "created_at": "2026-11-25T18:28:56.731533+00:00"
+   },
+   {
+    "id": "c90f4508-1e97-446d-8cfd-98e881fa042f",
+    "listing_id": "3cde247c-bb09-4b96-9076-3449815745f2",
+    "bid_id": "def6a2fb-1917-4d47-bb8f-51fb271c11db",
+    "actor_id": "d9287552-064e-47cf-8b47-8b379028a599",
+    "action": "BID_PLACED",
+    "data": {
+     "price_per_kg": "102.5000",
+     "quantity_kg": "2000.000",
+     "valid_until": "2026-11-30 18:28:56.718981+00:00"
+    },
+    "created_at": "2026-11-25T18:28:56.765171+00:00"
+   },
+   {
+    "id": "2647c4cb-aebf-4ef5-afcf-07066b4d21c8",
+    "listing_id": "3cde247c-bb09-4b96-9076-3449815745f2",
+    "bid_id": "def6a2fb-1917-4d47-bb8f-51fb271c11db",
+    "actor_id": "655072b6-894c-44c3-ae58-2be3fe040caa",
+    "action": "BID_AUTO_REJECTED",
+    "data": {
+     "reason": "Listing was removed by AgroBid"
+    },
+    "created_at": "2026-11-25T18:28:56.899262+00:00"
+   },
+   {
+    "id": "412deaaf-faf2-44ed-aa63-c88f2155e1e0",
+    "listing_id": "3cde247c-bb09-4b96-9076-3449815745f2",
+    "bid_id": null,
+    "actor_id": "655072b6-894c-44c3-ae58-2be3fe040caa",
+    "action": "LISTING_REMOVED_BY_ADMIN",
+    "data": {
+     "reason": "Duplicate listing",
+     "bids_rejected": 1
+    },
+    "created_at": "2026-11-25T18:28:56.899270+00:00"
+   }
+  ]
+ },
+ "bids": {
+  "items": [
+   {
+    "id": "def6a2fb-1917-4d47-bb8f-51fb271c11db",
+    "listing_id": "3cde247c-bb09-4b96-9076-3449815745f2",
+    "status": "REJECTED",
+    "revision": 1,
+    "price": 4100.0,
+    "price_unit": "MAUND",
+    "price_per_maund": 4100.0,
+    "quantity": 50.0,
+    "quantity_unit": "MAUND",
+    "quantity_kg": 2000.0,
+    "total_value": 205000.0,
+    "delivery_option": "NEGOTIABLE",
+    "delivery_notes": null,
+    "payment_terms": null,
+    "valid_until": "2026-11-30T18:28:56.718981+00:00",
+    "decision_reason": "Listing was removed by AgroBid",
+    "decided_at": "2026-11-25T18:28:56.896364+00:00",
+    "created_at": "2026-11-25T18:28:56.763690+00:00",
+    "updated_at": "2026-11-25T18:28:56.898040+00:00",
+    "buyer": {
+     "id": "d9287552-064e-47cf-8b47-8b379028a599",
+     "full_name": "Buyer1",
+     "identity_verified": true,
+     "business_name": "buyer1 Mills",
+     "buyer_type": "MILL_OWNER",
+     "district": "Faisalabad"
+    }
+   }
+  ],
+  "page": 1,
+  "page_size": 25,
+  "total": 1
+ },
+ "prices": {
+  "items": [
+   {
+    "id": "68bf530d-85c0-4bb6-8a69-bf09722763f5",
+    "grain": "RICE",
+    "market": "Gujranwala",
+    "province": "Punjab",
+    "min_price": 3000.0,
+    "max_price": 3400.0,
+    "avg_price": 3200.0,
+    "unit": "MAUND",
+    "price_per_maund": 3200.0,
+    "price_date": "2026-11-25",
+    "age_days": 0,
+    "source": "AMIS_PUNJAB",
+    "source_url": null
+   },
+   {
+    "id": "ffc0c2a4-d064-4951-aeaf-486c91ddf753",
+    "grain": "WHEAT",
+    "market": "Okara",
+    "province": "Punjab",
+    "min_price": null,
+    "max_price": null,
+    "avg_price": 10100.0,
+    "unit": "QUINTAL",
+    "price_per_maund": 4040.0,
+    "price_date": "2026-11-25",
+    "age_days": 0,
+    "source": "AMIS_PUNJAB",
+    "source_url": null
+   }
+  ],
+  "page": 1,
+  "page_size": 50,
+  "total": 2,
+  "disclaimer": "Official prices are a reference for decision support only, not a guaranteed sale price."
+ },
+ "history": {
+  "grain": "WHEAT",
+  "market": "Okara",
+  "points": [
+   {
+    "id": "ffc0c2a4-d064-4951-aeaf-486c91ddf753",
+    "grain": "WHEAT",
+    "market": "Okara",
+    "province": "Punjab",
+    "min_price": null,
+    "max_price": null,
+    "avg_price": 10100.0,
+    "unit": "QUINTAL",
+    "price_per_maund": 4040.0,
+    "price_date": "2026-11-25",
+    "age_days": 0,
+    "source": "AMIS_PUNJAB",
+    "source_url": null
+   }
+  ],
+  "disclaimer": "Official prices are a reference for decision support only, not a guaranteed sale price."
+ },
+ "audit": [
+  {
+   "id": "0843be22-4309-4ed0-b737-380c35a4bb5a",
+   "admin_id": "655072b6-894c-44c3-ae58-2be3fe040caa",
+   "action": "LISTING_REMOVED",
+   "target_user_id": "d95e7eea-aca1-4021-8332-3c4b3f16d879",
+   "reason": "Duplicate listing",
+   "metadata": {
+    "listing_id": "3cde247c-bb09-4b96-9076-3449815745f2"
+   },
+   "created_at": "2026-11-25T18:28:56.897086"
+  },
+  {
+   "id": "b83a7425-c7e3-4875-a841-a56f27948a1a",
+   "admin_id": "655072b6-894c-44c3-ae58-2be3fe040caa",
+   "action": "PRICES_IMPORTED",
+   "target_user_id": null,
+   "reason": null,
+   "metadata": {
+    "created": 1,
+    "updated": 0,
+    "format": "csv",
+    "file": "prices.csv"
+   },
+   "created_at": "2026-11-25T18:28:56.693042"
+  },
+  {
+   "id": "36d4f3e4-c7f1-469a-80c8-c705779787ca",
+   "admin_id": "655072b6-894c-44c3-ae58-2be3fe040caa",
+   "action": "PRICE_UPDATED",
+   "target_user_id": null,
+   "reason": null,
+   "metadata": {
+    "price_id": "ffc0c2a4-d064-4951-aeaf-486c91ddf753"
+   },
+   "created_at": "2026-11-25T18:28:56.668354"
+  },
+  {
+   "id": "3092c7c5-d6ed-411c-b576-5049a36b5481",
+   "admin_id": "655072b6-894c-44c3-ae58-2be3fe040caa",
+   "action": "PRICE_ADDED",
+   "target_user_id": null,
+   "reason": null,
+   "metadata": {
+    "price_id": "ffc0c2a4-d064-4951-aeaf-486c91ddf753",
+    "grain": "WHEAT",
+    "market": "Okara",
+    "price_date": "2026-11-25",
+    "source": "AMIS_PUNJAB"
+   },
+   "created_at": "2026-11-25T18:28:56.651032"
+  },
+  {
+   "id": "e1de50ec-265b-4d0d-b5b3-1c766620e7aa",
+   "admin_id": "655072b6-894c-44c3-ae58-2be3fe040caa",
+   "action": "USER_ACTIVATED",
+   "target_user_id": "d51788f3-81c2-4386-be1c-7d4fb4555e8a",
+   "reason": null,
+   "metadata": {
+    "previous_status": "SUSPENDED",
+    "new_status": "ACTIVE"
+   },
+   "created_at": "2026-11-25T18:28:56.601636"
+  },
+  {
+   "id": "185df96a-4bc1-4d73-9581-30d46671d646",
+   "admin_id": "655072b6-894c-44c3-ae58-2be3fe040caa",
+   "action": "USER_SUSPENDED",
+   "target_user_id": "d51788f3-81c2-4386-be1c-7d4fb4555e8a",
+   "reason": "Test suspension",
+   "metadata": {
+    "previous_status": "PENDING_APPROVAL",
+    "new_status": "SUSPENDED"
+   },
+   "created_at": "2026-11-25T18:28:56.584140"
+  },
+  {
+   "id": "ddb1d27a-91d7-4092-8980-8c368f0b05b4",
+   "admin_id": "655072b6-894c-44c3-ae58-2be3fe040caa",
+   "action": "PHOTO_REMOVED",
+   "target_user_id": "d95e7eea-aca1-4021-8332-3c4b3f16d879",
+   "reason": "Inappropriate image",
+   "metadata": {},
+   "created_at": "2026-11-25T18:28:56.557628"
+  },
+  {
+   "id": "cd502ad0-5c2e-4fa8-b9f1-150e5226d2aa",
+   "admin_id": "655072b6-894c-44c3-ae58-2be3fe040caa",
+   "action": "PROFILE_UPDATED",
+   "target_user_id": "d95e7eea-aca1-4021-8332-3c4b3f16d879",
+   "reason": "Corrected after call",
+   "metadata": {
+    "fields": [
+     "district",
+     "main_crops"
+    ]
+   },
+   "created_at": "2026-11-25T18:28:56.529175"
+  },
+  {
+   "id": "1ed889b5-36a9-4281-ac17-5a194d06452c",
+   "admin_id": "655072b6-894c-44c3-ae58-2be3fe040caa",
+   "action": "VERIFICATION_APPROVED",
+   "target_user_id": "d95e7eea-aca1-4021-8332-3c4b3f16d879",
+   "reason": "Documents match CNIC",
+   "metadata": {
+    "verification_id": "e91002bd-0c98-4025-a606-40f1d6017a3c"
+   },
+   "created_at": "2026-11-25T18:28:56.510252"
+  },
+  {
+   "id": "3503ae66-0bc4-40ab-a675-644b41b6393f",
+   "admin_id": "655072b6-894c-44c3-ae58-2be3fe040caa",
+   "action": "VERIFICATION_APPROVED",
+   "target_user_id": "d9287552-064e-47cf-8b47-8b379028a599",
+   "reason": "Documents match CNIC",
+   "metadata": {
+    "verification_id": "58995eb8-d6d5-4064-b03f-46acf4594cb2",
+    "previous_status": "PENDING_APPROVAL",
+    "new_status": "ACTIVE"
+   },
+   "created_at": "2026-11-25T18:28:56.491292"
+  },
+  {
+   "id": "752af86e-810a-4622-9d14-8f58d02d31b0",
+   "admin_id": "655072b6-894c-44c3-ae58-2be3fe040caa",
+   "action": "DOCUMENT_APPROVED",
+   "target_user_id": "d9287552-064e-47cf-8b47-8b379028a599",
+   "reason": null,
+   "metadata": {
+    "document_id": "80dc23e1-4bc1-4a2d-b0ab-87d97325a50e",
+    "document_type": "NTN_CERTIFICATE"
+   },
+   "created_at": "2026-11-25T18:28:56.432900"
+  },
+  {
+   "id": "d7dfe36e-89b8-48dd-b58c-4aaa444073c9",
+   "admin_id": "655072b6-894c-44c3-ae58-2be3fe040caa",
+   "action": "DOCUMENT_VIEWED",
+   "target_user_id": "d9287552-064e-47cf-8b47-8b379028a599",
+   "reason": null,
+   "metadata": {
+    "document_id": "80dc23e1-4bc1-4a2d-b0ab-87d97325a50e",
+    "document_type": "NTN_CERTIFICATE"
+   },
+   "created_at": "2026-11-25T18:28:56.411577"
+  }
+ ]
+}
