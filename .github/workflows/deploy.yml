@@ -1,0 +1,54 @@
+# Builds the Flutter web admin panel and publishes it to GitHub Pages on every push to main.
+# Site address: https://umairmirza99.github.io/AgrobidAdminApp/
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # allows a manual run from the Actions tab
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: 3.47.2
+          cache: true
+
+      - run: flutter pub get
+      - run: flutter test
+
+      # The site is served from /AgrobidAdminApp/, so the base href must match the repo name.
+      - run: flutter build web --release --base-href /AgrobidAdminApp/
+
+      # GitHub Pages has no rewrite rules: serving index.html as the 404 page lets
+      # links like /AgrobidAdminApp/users/123 open the app instead of a "not found" page.
+      - run: cp build/web/index.html build/web/404.html
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/web
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
